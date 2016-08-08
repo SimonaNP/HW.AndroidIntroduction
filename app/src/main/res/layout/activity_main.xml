@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefeb">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4da6ea">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txt_airpro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_logo"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="AirPro Mobile"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/img_bluetooth"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/img_circle"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bluetooth" />
+
+        <ImageView
+            android:id="@+id/img_circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/txt_airpro"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/img_bluetooth"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/img_probes"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/txt_airpro"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/probes" />
+
+        <TextView
+            android:id="@+id/txt_probes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_probes"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="7dp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="probes"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/img_workflows"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_below="@id/txt_airpro"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clipboard" />
+
+        <TextView
+            android:id="@+id/txt_workflows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_workflows"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="workflows"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/img_datafiles"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_airpro"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/folder"
+            />
+
+        <TextView
+            android:id="@+id/txt_datafiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/img_datafiles"
+            android:layout_marginRight="7dp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="data files"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_density"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="standard air density"
+        android:textAllCaps="true"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="330dp"
+        android:layout_below="@+id/txt_density"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_vth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VTHCharlie"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txt_abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_vth"
+            android:text="ABC1245678"
+            android:textColor="#4d4d4d"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_sd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/img_battery"
+            android:src="@drawable/sd" />
+
+        <ImageView
+            android:id="@+id/img_battery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/img_settings"
+            android:src="@drawable/battery" />
+
+        <ImageView
+            android:id="@+id/img_settings"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/txt_abc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@drawable/icon1" />
+
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_abc"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@id/img_icon"
+            android:text="@string/_1234"
+            android:textColor="#000000"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/txt_cfm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_number"
+            android:layout_toRightOf="@id/img_icon"
+            android:text="@string/cfm"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/img_gps"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_cfm"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gps" />
+
+        <ImageView
+            android:id="@+id/img_circle2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_cfm"
+            android:layout_toLeftOf="@id/txt_in"
+            android:src="@drawable/circle2" />
+
+        <TextView
+            android:id="@+id/txt_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_cfm"
+            android:layout_alignParentRight="true"
+            android:text="36 in"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:paddingTop="4dp"/>
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_gps">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_wind"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/wind" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/img_wind"
+                        android:text="85"
+                        android:textSize="42sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_wind"
+                        android:layout_marginLeft="42dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ft/min"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_fluidity"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/fluidity"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/img_fluidity"
+                        android:text="36"
+                        android:textSize="42sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_fluidity"
+                        android:layout_marginLeft="42dp"
+                        android:layout_marginTop="10dp"
+                        android:text="T"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_temp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/temperature" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/img_temp"
+                        android:text="45"
+                        android:textSize="42sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_temp"
+                        android:layout_marginLeft="42dp"
+                        android:layout_marginTop="10dp"
+                        android:text="F"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_temp2"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/temperature2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/img_temp2"
+                        android:text="@string/_42"
+                        android:textSize="42sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_temp2"
+                        android:layout_marginLeft="42dp"
+                        android:layout_marginTop="10dp"
+                        android:text="cfm"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
